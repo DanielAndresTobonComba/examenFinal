@@ -23,7 +23,7 @@ public class Detalles_ventas {
     private String cantidad;
 
     @Column(columnDefinition = "DECIMAL(10,2)", nullable = false)
-    private String precio_unitario;
+    private String precioUnitario;
 
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -55,13 +55,7 @@ public class Detalles_ventas {
         this.cantidad = cantidad;
     }
 
-    public String getPrecio_unitario() {
-        return precio_unitario;
-    }
-
-    public void setPrecio_unitario(String precio_unitario) {
-        this.precio_unitario = precio_unitario;
-    }
+    
 
     public Venta getVenta() {
         return venta;
@@ -77,6 +71,14 @@ public class Detalles_ventas {
 
     public void setBicicletas(Bicicletas bicicletas) {
         this.bicicletas = bicicletas;
+    }
+
+    public String getPrecioUnitario() {
+        return precioUnitario;
+    }
+
+    public void setPrecioUnitario(String precioUnitario) {
+        this.precioUnitario = precioUnitario;
     }
 
 

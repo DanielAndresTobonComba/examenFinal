@@ -40,6 +40,7 @@ public class VentaImpl implements VentasServicios {
             
             ventaDB.setFecha(venta.getFecha());
             ventaDB.setCliente(venta.getCliente());
+           
 
             return Optional.of(repositorio.save(ventaDB));
             
