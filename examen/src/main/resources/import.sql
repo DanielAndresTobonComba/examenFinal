@@ -15,3 +15,6 @@ insert into clientes (nombre , email , telefono, password , ciudad_id) values ("
 insert into ventas (fecha , cliente_id) values ("2024/12/12" , 1) , ("2024/12/12" , 2);
 
 
+insert into detalles_ventas (cantidad , precio_unitario , venta_id , bicicleta_id) values (12 , 150 , 1 , 1);
+
+

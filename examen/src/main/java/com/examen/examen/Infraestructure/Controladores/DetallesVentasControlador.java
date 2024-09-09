@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.examen.examen.Domain.Entities.Bicicletas;
+
 import com.examen.examen.Domain.Entities.Detalles_ventas;
 import com.examen.examen.Domain.Services.DetallesVentasServicios;
 
@@ -32,7 +32,23 @@ public class DetallesVentasControlador {
     } 
 
 
-    // http://localhost:8090/detalles_ventas/findDetalleVentaById/1
+    // http://localhost:8090/detalles_ventas/create
+
+    /* 
+     {
+  "id": 2,
+  "cantidad": "105",
+  "precioUnitario": "99.99",
+  "venta": {
+    "id": 1
+
+  },
+  "bicicletas": {
+    "id": 1
+
+  }
+}
+     */
 
     @PostMapping("/create")
     public Detalles_ventas createOne(@RequestBody Detalles_ventas detalles_ventas) {
@@ -41,9 +57,25 @@ public class DetallesVentasControlador {
     }
 
 
-      // http://localhost:8090/detalles_ventas/findDetalleVentaById/1
+      // http://localhost:8090/detalles_ventas/updateDetalles/1
 
-    @PutMapping("/updateBike/{id}") 
+      /* 
+       {
+  "cantidad": "105",
+  "precioUnitario": "99.99",
+  "venta": {
+    "id": 1
+
+  },
+  "bicicletas": {
+    "id": 1
+
+  }
+} 
+       
+       */
+
+    @PutMapping("/updateDetalles/{id}") 
     public  Optional <Detalles_ventas> updateOne (@PathVariable Long id , @RequestBody Detalles_ventas detalles_ventas) {
 
         
