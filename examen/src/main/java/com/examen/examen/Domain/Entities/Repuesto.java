@@ -32,7 +32,7 @@ public class Repuesto {
     private String stock;
 
     @ManyToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "proveedor", nullable = false )
+    @JoinColumn(name = "proveedor_id", nullable = false )
     //@JsonIgnore
     private Proveedor proveedor;
 

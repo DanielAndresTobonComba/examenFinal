@@ -60,18 +60,18 @@ public class DetallesVentasControlador {
       // http://localhost:8090/detalles_ventas/updateDetalles/1
 
       /* 
-       {
-  "cantidad": "105",
-  "precioUnitario": "99.99",
-  "venta": {
-    "id": 1
+            {
+        "cantidad": "105",
+        "precioUnitario": "99.99",
+        "venta": {
+            "id": 1
 
-  },
-  "bicicletas": {
-    "id": 1
+        },
+        "bicicletas": {
+            "id": 1
 
-  }
-} 
+        }
+        } 
        
        */
 
